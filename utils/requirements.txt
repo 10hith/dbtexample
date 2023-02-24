@@ -1,0 +1,43 @@
+fastapi==0.92.0
+uvicorn==0.20.0
+dash==2.8.1
+Flask-Compress==1.13
+# dash[compress]
+diskcache==5.4.0
+celery == 5.2.7
+redis==4.5.1
+multiprocess==0.70.14
+dash_bootstrap_components==1.3.1
+dash-mantine-components==0.11.1
+# dash_extensions==0.1.5
+dash-leaflet==0.1.23
+dash-gif-component==1.1.0
+dash-iconify
+plotly_express
+jupyter-dash==0.4.2
+pandas
+py4j==0.10.9.5
+pyarrow
+urllib3==1.26.6
+# Jinja2==3.0.3
+kaleido
+visdcc==0.0.40
+jupyterlab==3.6.1
+jsbeautifier
+geopandas
+geopy
+protobuf==3.20.0
+beautifulsoup4==4.11.2
+# Werkzeug==2.0.3
+user-agents==2.2.0
+selenium
+markupsafe==2.0.1
+polars==0.16.7
+duckdb==0.7.0
+structlog
+jupysql
+duckdb-engine
+pyspark==3.3.0
+apache-sedona==1.2.1
+dbt-core
+dbt-duckdb

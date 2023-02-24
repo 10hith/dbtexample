@@ -1,0 +1,33 @@
+
+version: 2
+
+models:
+  - name: partition_oa_by_ladcd
+    description: "Breakdown oa geo to check crime point in oa"
+    columns:
+      - name: lad22cd
+        description: "The primary key for this table"
+        tests:
+          - not_null
+
+  - name: crime_point_index
+    description: "Create an index of all the crime points in db"
+    columns:
+      - name: lat
+        description: "lattitude"
+        tests:
+          - not_null
+      - name: lon
+        description: "longitude"
+      - name: lsoa11cd
+        description: "ls0a11cd - will need to check if this will change in the future"
+
+  - name: pip_join_point_w_polygon
+    description: "Perform point-in-polygon operation using Spark. \
+To make spatical join performant, data was partitioned into lads."
+
+  - name: crime_point_index_w_oa
+    description: 'Load the data back to database - Dont want to run this again(2.5hrs)'
+
+  - name: pip_join_point_w_polygon_secondPass
+    description: 'For the points not mapped with ladcd condition, run gain relaxing the condition.'
